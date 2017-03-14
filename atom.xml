@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-14T01:17:54.000Z</updated>
+  <updated>2017-03-14T11:00:15.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Javascript] 數字精確度</title>
+    <link href="http://yoursite.com/2017/03/14/untitled-1489488561710/"/>
+    <id>http://yoursite.com/2017/03/14/untitled-1489488561710/</id>
+    <published>2017-03-14T10:49:21.000Z</published>
+    <updated>2017-03-14T11:00:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>浮點數的運算上大部份與精確度(Precision)有關，以下是幾個典型的範例。</p>
+<h4 id="Example1"><a href="#Example1" class="headerlink" title="Example1"></a>Example1</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">console.log(999999999999999);</div><div class="line">console.log(9999999999999999);</div></pre></td></tr></table></figure>
+<h4 id="Example2"><a href="#Example2" class="headerlink" title="Example2"></a>Example2</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">const x = 0.2 + 0.1;</div><div class="line">const y = 0.3 - 0.1;</div><div class="line"></div><div class="line">console.log(x, y);</div></pre></td></tr></table></figure>
+<p>如果你需要處理浮點數的運算，可以尋找合適的函式庫，單靠Javascript語言本身可能會有所不足。例如 <a href="https://github.com/MikeMcl/decimal.js/" target="_blank" rel="external">decimal.js</a> 或 <a href="https://github.com/dtrebbien/BigDecimal.js" target="_blank" rel="external">BigDecimal.js</a>。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;浮點數的運算上大部份與精確度(Precision)有關，以下是幾個典型的範例。&lt;/p&gt;
+&lt;h4 id=&quot;Example1&quot;&gt;&lt;a href=&quot;#Example1&quot; class=&quot;headerlink&quot; title=&quot;Example1&quot;&gt;&lt;/a&gt;Example1&lt;/h4&gt;&lt;f
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="precision" scheme="http://yoursite.com/tags/precision/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>[Mongodb] Connect failure to Mongodb on VM</title>
