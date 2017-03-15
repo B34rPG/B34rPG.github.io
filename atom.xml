@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-15T03:13:17.000Z</updated>
+  <updated>2017-03-15T10:15:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,92 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Javascript] slice / splice / split 比較</title>
+    <link href="http://yoursite.com/2017/03/15/slice-splice-split/"/>
+    <id>http://yoursite.com/2017/03/15/slice-splice-split/</id>
+    <published>2017-03-15T08:17:32.000Z</published>
+    <updated>2017-03-15T10:15:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="slice-分割"><a href="#slice-分割" class="headerlink" title="slice (分割)"></a>slice (分割)</h2><blockquote>
+<p>分割字串或陣列的某個部分。<br>回傳一個新的字串或陣列，不會更動到原始變數內的值。</p>
+<blockquote>
+<p>能處理</p>
+<ul>
+<li>字串 (string)</li>
+<li>陣列 (array)</li>
+<li>淺複製 (shallow copy)</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>字串範例：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> str = <span class="string">'0123456789'</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">0</span>, <span class="number">3</span>)) <span class="comment">//012</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">5</span>, <span class="number">8</span>)) <span class="comment">//567</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">4</span>, <span class="number">4</span>)) <span class="comment">//''</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">5</span>)) <span class="comment">//56789</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">5</span>, <span class="number">2</span>)) <span class="comment">//''</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">5</span>, <span class="number">20</span>)) <span class="comment">//56789</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">-5</span>, <span class="number">2</span>)) <span class="comment">//''</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">2</span>, <span class="number">-5</span>)) <span class="comment">//234</span></div><div class="line"><span class="built_in">console</span>.log(str.slice(<span class="number">-5</span>, <span class="number">-5</span>)) <span class="comment">//''</span></div></pre></td></tr></table></figure></p>
+<p>陣列範例：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">1</span>, <span class="number">3</span>)) <span class="comment">//[2, 3]</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">0</span>)) <span class="comment">//[1, 2, 3, 4, 5]</span></div><div class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">-1</span>, <span class="number">-3</span>)) <span class="comment">//[]</span></div><div class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">-3</span>, <span class="number">-1</span>)) <span class="comment">//[3, 4]</span></div><div class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">1</span>, <span class="number">-3</span>)) <span class="comment">//[2]</span></div></pre></td></tr></table></figure></p>
+<p>淺複製範例：</p>
+<blockquote>
+<p>是淺複製目前是效率較好的方式。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> oldArray = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line"></div><div class="line"><span class="keyword">const</span> newArray = oldArray.slice(<span class="number">0</span>) </div><div class="line"><span class="comment">//or const newArray = oldArray.slice()</span></div><div class="line"><span class="built_in">console</span>.log(newArray) <span class="comment">//[1, 2, 3, 4, 5]</span></div><div class="line"></div><div class="line">newArray[<span class="number">0</span>] = <span class="number">999</span></div><div class="line"><span class="built_in">console</span>.log(newArray) <span class="comment">//[999, 2, 3, 4, 5]</span></div><div class="line"><span class="built_in">console</span>.log(oldArray) <span class="comment">//[1, 2, 3, 4, 5]</span></div></pre></td></tr></table></figure>
+<hr>
+<h2 id="splice-粘接"><a href="#splice-粘接" class="headerlink" title="splice (粘接)"></a>splice (粘接)</h2><blockquote>
+<p>刪除、取代或增加陣列中的成員.<br>將改變原先的陣列內的值。</p>
+<blockquote>
+<p>能處理</p>
+<ul>
+<li>陣列 (array)</li>
+</ul>
+</blockquote>
+</blockquote>
+<p><strong>新增</strong>成員範例：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> dictionary = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>, <span class="string">'f'</span>]</div><div class="line"></div><div class="line"><span class="comment">//找到b的位置，在b後面新增c</span></div><div class="line"><span class="keyword">const</span> bIndex = dictionary.indexOf(<span class="string">'b'</span>)</div><div class="line"></div><div class="line"><span class="comment">//bIndex大於-1代表有存在</span></div><div class="line"><span class="keyword">if</span> (bIndex &gt; <span class="number">-1</span>) &#123;</div><div class="line">    dictionary.splice(bIndex+<span class="number">1</span>, <span class="number">0</span>, <span class="string">'c'</span>)</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(dictionary) <span class="comment">//['a', 'b', 'c', 'd', 'e', 'f']</span></div></pre></td></tr></table></figure></p>
+<p><strong>取代</strong>成員範例：</p>
+<ul>
+<li>單個<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> dictionary = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'x'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"></div><div class="line"><span class="comment">//找到x的位置，等會要用c來取代x</span></div><div class="line"><span class="keyword">const</span> xIndex = dictionary.indexOf(<span class="string">'x'</span>)</div><div class="line"></div><div class="line"><span class="comment">//bIndex大於-1代表有存在</span></div><div class="line"><span class="keyword">if</span> (bIndex &gt; <span class="number">-1</span>) &#123;</div><div class="line">    dictionary.splice(xIndex, <span class="number">1</span>, <span class="string">'c'</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>多個<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> dictionary = [<span class="string">'x'</span>, <span class="string">'b'</span>, <span class="string">'x'</span>, <span class="string">'x'</span>, <span class="string">'b'</span>]</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = dictionary.length; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">if</span> (dictionary[i] === <span class="string">'x'</span>) &#123;</div><div class="line">        dictionary.splice(i, <span class="number">1</span>, <span class="string">'c'</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>刪除</strong>成員範例：</p>
+<ul>
+<li><p>單個</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> dictionary = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'x'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"></div><div class="line"><span class="comment">//找到x的位置</span></div><div class="line"><span class="keyword">const</span> xIndex = dictionary.indexOf(<span class="string">'x'</span>)</div><div class="line"></div><div class="line"><span class="comment">//xIndex大於-1代表有存在</span></div><div class="line"><span class="keyword">if</span> (xIndex &gt; <span class="number">-1</span>) &#123;</div><div class="line">    dictionary.splice(xIndex, <span class="number">1</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>多個</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> dictionary = [<span class="string">'x'</span>, <span class="string">'b'</span>, <span class="string">'x'</span>, <span class="string">'x'</span>, <span class="string">'b'</span>]</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = dictionary.length; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">if</span> (dictionary[i] === <span class="string">'x'</span>) &#123;</div><div class="line">        dictionary.splice(i, <span class="number">1</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="split-分離"><a href="#split-分離" class="headerlink" title="split (分離)"></a>split (分離)</h2><blockquote>
+<p>把字串分割成陣列。<br>回傳一個新的陣列，不會更動到原始變數內的值。</p>
+<blockquote>
+<p>能處理</p>
+<ul>
+<li>字串 (string)</li>
+</ul>
+</blockquote>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> str = <span class="string">'Mon,Tue,Wed,Thu,Fri'</span></div><div class="line"><span class="keyword">const</span> arr1 = str.split(<span class="string">','</span>) <span class="comment">//["Mon", "Tue", "Wed", "Thu", "Fri"]</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> arr2 = str.split()  <span class="comment">//["Mon,Tue,Wed,Thu,Fri"]</span></div><div class="line"><span class="keyword">const</span> arr3 = str.split(<span class="string">''</span>) <span class="comment">//["M", "o", "n", ",", "T", "u", "e", ",", "W", "e", "d", ",", "T", "h", "u", ",", "F", "r", "i"]</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;slice-分割&quot;&gt;&lt;a href=&quot;#slice-分割&quot; class=&quot;headerlink&quot; title=&quot;slice (分割)&quot;&gt;&lt;/a&gt;slice (分割)&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;分割字串或陣列的某個部分。&lt;br&gt;回傳一個新的字串或陣列，
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="string" scheme="http://yoursite.com/tags/string/"/>
+    
+      <category term="arrray" scheme="http://yoursite.com/tags/arrray/"/>
+    
+      <category term="shallow copy" scheme="http://yoursite.com/tags/shallow-copy/"/>
+    
+  </entry>
   
   <entry>
     <title>[Javascript] null(空) 與 undefined(未定義)</title>
@@ -69,9 +155,9 @@
       <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
     
     
-      <category term="precision" scheme="http://yoursite.com/tags/precision/"/>
-    
       <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="precision" scheme="http://yoursite.com/tags/precision/"/>
     
   </entry>
   
