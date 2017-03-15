@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/03/13/connect-failure-to-mongodb-on-vm/</loc>
+    
+    <lastmod>2017-03-15T10:22:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/03/15/slice-splice-split/</loc>
     
     <lastmod>2017-03-15T10:15:42.000Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2017-03-14T02:04:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/13/connect-failure-to-mongodb-on-vm/</loc>
-    
-    <lastmod>2017-03-14T01:17:54.000Z</lastmod>
     
   </url>
   
