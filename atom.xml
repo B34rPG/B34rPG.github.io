@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-14T11:11:20.000Z</updated>
+  <updated>2017-03-15T03:13:17.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Javascript] null(空) 與 undefined(未定義)</title>
+    <link href="http://yoursite.com/2017/03/15/null-and-undefined/"/>
+    <id>http://yoursite.com/2017/03/15/null-and-undefined/</id>
+    <published>2017-03-15T02:33:40.000Z</published>
+    <updated>2017-03-15T03:13:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>空值，代表的是沒有值的意思，被視為一個object。</p>
+<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>尚未被定義類型，或也有可能是未被宣告，完全不知道是什麼。</p>
+<hr>
+<p>以下是最淺顯易懂的說明：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name <span class="comment">//name未被定義完成，不知道類型</span></div></pre></td></tr></table></figure></p>
+<p><strong>You</strong>: What is name?<br><strong>JavaScript</strong>: name? What’s a name? I don’t know what you’re talking about. You haven’t ever mentioned any name before. Are you seeing some other scripting language on the client-side?<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="literal">null</span> <span class="comment">//name沒有值</span></div></pre></td></tr></table></figure></p>
+<p><strong>You</strong>: What is name?<br><strong>JavaScript</strong>: I don’t know.</p>
+<hr>
+<p>參考資料：<a href="http://stackoverflow.com/questions/801032/why-is-null-an-object-and-whats-the-difference-between-null-and-undefined" target="_blank" rel="external">Why is null an object and what’s the difference between null and undefined?</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;null&quot;&gt;&lt;a href=&quot;#null&quot; class=&quot;headerlink&quot; title=&quot;null&quot;&gt;&lt;/a&gt;null&lt;/h3&gt;&lt;p&gt;空值，代表的是沒有值的意思，被視為一個object。&lt;/p&gt;
+&lt;h3 id=&quot;undefined&quot;&gt;&lt;a href=&quot;#un
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://yoursite.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>[Javascript] 數字精確度</title>
