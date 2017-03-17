@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-16T06:02:32.000Z</updated>
+  <updated>2017-03-17T03:20:28.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[React Native] Android 設置 local.properties</title>
+    <link href="http://yoursite.com/2017/03/17/android-local-properties/"/>
+    <id>http://yoursite.com/2017/03/17/android-local-properties/</id>
+    <published>2017-03-17T03:05:50.000Z</published>
+    <updated>2017-03-17T03:20:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>Error Message</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">FAILURE: Build failed with an exception.</div><div class="line"></div><div class="line">* Where:</div><div class="line">Build file &apos;/Users/[USERNAME]/[APPNAME]/android/app/build.gradle&apos; line: 110</div><div class="line"></div><div class="line">* What went wrong:</div><div class="line">A problem occurred evaluating project &apos;:app&apos;.</div><div class="line">&gt; SDK location not found. Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable.</div><div class="line"></div><div class="line">* Try:</div><div class="line">Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.</div><div class="line"></div><div class="line">BUILD FAILED</div></pre></td></tr></table></figure>
+<h2 id="處理方式"><a href="#處理方式" class="headerlink" title="處理方式"></a>處理方式</h2><ul>
+<li>App的專案裡，到android的根目錄中新增 <strong>local.properties</strong> 的檔案</li>
+<li>加入 local.properties 的內容  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sdk.dir = /Users/[USERNAME]/Library/Android/sdk</div></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Error Message&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="react native" scheme="http://yoursite.com/categories/react-native/"/>
+    
+    
+      <category term="react native" scheme="http://yoursite.com/tags/react-native/"/>
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+      <category term="exception" scheme="http://yoursite.com/tags/exception/"/>
+    
+  </entry>
   
   <entry>
     <title>[Electron] 如何在Electron框架上使用jQuery</title>
