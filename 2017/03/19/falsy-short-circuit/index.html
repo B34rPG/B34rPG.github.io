@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript,falsy,short-circuit," />
 
 
 
@@ -89,15 +89,58 @@
 
 
 
-<meta name="description" content="One man’s crappy software is another man’s full time job.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="B34rPG Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="Falsy
+falsy 包含
+
+false
+null
+undefined
+0
+-0
+NaN
+空白字串(‘’)
+
+
+12console.log(true &amp;amp;&amp;amp; 0) //falseconsole.log(true || undefined) //true
+Short-Circuit
+邏輯或(Logical OR)(||)運算符在運算時，如果當第1個運算子為”falsy”時，則回傳第2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Javascript] Falsy and Short-Circuit">
+<meta property="og:url" content="http://yoursite.com/2017/03/19/falsy-short-circuit/index.html">
 <meta property="og:site_name" content="B34rPG Blog">
-<meta property="og:description" content="One man’s crappy software is another man’s full time job.">
+<meta property="og:description" content="Falsy
+falsy 包含
+
+false
+null
+undefined
+0
+-0
+NaN
+空白字串(‘’)
+
+
+12console.log(true &amp;amp;&amp;amp; 0) //falseconsole.log(true || undefined) //true
+Short-Circuit
+邏輯或(Logical OR)(||)運算符在運算時，如果當第1個運算子為”falsy”時，則回傳第2">
+<meta property="og:updated_time" content="2017-03-19T04:26:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="B34rPG Blog">
-<meta name="twitter:description" content="One man’s crappy software is another man’s full time job.">
+<meta name="twitter:title" content="[Javascript] Falsy and Short-Circuit">
+<meta name="twitter:description" content="Falsy
+falsy 包含
+
+false
+null
+undefined
+0
+-0
+NaN
+空白字串(‘’)
+
+
+12console.log(true &amp;amp;&amp;amp; 0) //falseconsole.log(true || undefined) //true
+Short-Circuit
+邏輯或(Logical OR)(||)運算符在運算時，如果當第1個運算子為”falsy”時，則回傳第2">
 
 
 
@@ -125,13 +168,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/19/falsy-short-circuit/"/>
 
 
 
 
 
-  <title> Archive | B34rPG Blog </title>
+  <title> [Javascript] Falsy and Short-Circuit | B34rPG Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -156,7 +199,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -260,288 +303,197 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 7 posts in total. Keep on posting.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/19/falsy-short-circuit/" itemprop="url">
-              
-                <span itemprop="name">[Javascript] Falsy and Short-Circuit</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-19T12:13:50+08:00"
-              content="2017-03-19" >
-          03-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/17/android-local-properties/" itemprop="url">
-              
-                <span itemprop="name">[React Native] Android 設置 local.properties</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-17T11:05:50+08:00"
-              content="2017-03-17" >
-          03-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/16/electron-use-jquery/" itemprop="url">
-              
-                <span itemprop="name">[Electron] 如何在Electron框架上使用jQuery</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-16T13:52:36+08:00"
-              content="2017-03-16" >
-          03-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/15/slice-splice-split/" itemprop="url">
-              
-                <span itemprop="name">[Javascript] slice / splice / split 比較</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-15T16:17:32+08:00"
-              content="2017-03-15" >
-          03-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/15/null-and-undefined/" itemprop="url">
-              
-                <span itemprop="name">[Javascript] null(空) 與 undefined(未定義)</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-15T10:33:40+08:00"
-              content="2017-03-15" >
-          03-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/14/number-precision/" itemprop="url">
-              
-                <span itemprop="name">[Javascript] 數字精確度</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-14T18:49:21+08:00"
-              content="2017-03-14" >
-          03-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/13/connect-failure-to-mongodb-on-vm/" itemprop="url">
-              
-                <span itemprop="name">[Mongodb] Connect failure to Mongodb on VM</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-13T14:48:06+08:00"
-              content="2017-03-13" >
-          03-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/falsy-short-circuit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="B34rPG">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/15855064?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="B34rPG Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                [Javascript] Falsy and Short-Circuit
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-19T12:13:50+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Falsy"><a href="#Falsy" class="headerlink" title="Falsy"></a>Falsy</h2><blockquote>
+<p>falsy 包含</p>
+<ul>
+<li>false</li>
+<li>null</li>
+<li>undefined</li>
+<li>0</li>
+<li>-0</li>
+<li>NaN</li>
+<li>空白字串(‘’)</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">true</span> &amp;&amp; <span class="number">0</span>) <span class="comment">//false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="literal">true</span> || <span class="literal">undefined</span>) <span class="comment">//true</span></div></pre></td></tr></table></figure>
+<h2 id="Short-Circuit"><a href="#Short-Circuit" class="headerlink" title="Short-Circuit"></a>Short-Circuit</h2><blockquote>
+<p>邏輯或(Logical OR)(||)運算符在運算時，如果當第1個運算子為”falsy”時，則回傳第2個運算子。否則，將會回傳第1個運算子。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'foo'</span> || <span class="string">'bar'</span>) <span class="comment">// 'foo'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="literal">false</span> || <span class="string">'bar'</span>) <span class="comment">// 'bar'</span></div><div class="line"></div><div class="line"><span class="comment">// 進階</span></div><div class="line"><span class="built_in">console</span>.log( <span class="number">0</span> || <span class="string">''</span> || <span class="number">5</span> || <span class="string">'bar'</span>) <span class="comment">//5</span></div><div class="line"><span class="built_in">console</span>.log(<span class="literal">false</span> || <span class="literal">null</span> || <span class="string">''</span> || <span class="number">0</span> || <span class="literal">NaN</span> || <span class="string">'Hello'</span> || <span class="literal">undefined</span>) <span class="comment">//'Hello'</span></div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+            <a href="/tags/falsy/" rel="tag"># falsy</a>
+          
+            <a href="/tags/short-circuit/" rel="tag"># short-circuit</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/17/android-local-properties/" rel="next" title="[React Native] Android 設置 local.properties">
+                <i class="fa fa-chevron-left"></i> [React Native] Android 設置 local.properties
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -549,6 +501,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -568,8 +524,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars0.githubusercontent.com/u/15855064?v=3&s=460"
@@ -638,6 +603,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Falsy"><span class="nav-number">1.</span> <span class="nav-text">Falsy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Short-Circuit"><span class="nav-number">2.</span> <span class="nav-text">Short-Circuit</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -743,11 +724,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
