@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-19T04:26:01.000Z</updated>
+  <updated>2017-03-21T08:47:52.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Nginx] Deploy React Static Website on Ubuntu</title>
+    <link href="http://yoursite.com/2017/03/21/deploy-static-website-ubuntu/"/>
+    <id>http://yoursite.com/2017/03/21/deploy-static-website-ubuntu/</id>
+    <published>2017-03-21T08:41:41.000Z</published>
+    <updated>2017-03-21T08:47:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安裝-Nginx"><a href="#安裝-Nginx" class="headerlink" title="安裝 Nginx"></a>安裝 Nginx</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nginx</div></pre></td></tr></table></figure>
+<h2 id="編輯檔案"><a href="#編輯檔案" class="headerlink" title="編輯檔案"></a>編輯檔案</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/nginx/sites-available/default</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen 80;</div><div class="line">    server_name localhost;</div><div class="line">    root [PROJECT_PATH];</div><div class="line">    index index.html index.htm;</div><div class="line">    location / &#123;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="重啓Nginx"><a href="#重啓Nginx" class="headerlink" title="重啓Nginx"></a>重啓Nginx</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo service nginx restart</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安裝-Nginx&quot;&gt;&lt;a href=&quot;#安裝-Nginx&quot; class=&quot;headerlink&quot; title=&quot;安裝 Nginx&quot;&gt;&lt;/a&gt;安裝 Nginx&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl
+    
+    </summary>
+    
+      <category term="Nginx" scheme="http://yoursite.com/categories/Nginx/"/>
+    
+    
+      <category term="deploy" scheme="http://yoursite.com/tags/deploy/"/>
+    
+      <category term="static website" scheme="http://yoursite.com/tags/static-website/"/>
+    
+      <category term="ubuntu" scheme="http://yoursite.com/tags/ubuntu/"/>
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
+    
+  </entry>
   
   <entry>
     <title>[Javascript] Falsy and Short-Circuit</title>
